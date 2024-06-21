@@ -26,13 +26,12 @@
             Contribuente contribuente = new Contribuente(nome, cognome, datadinascita, comune, codiceFiscale, sesso, reddito);
 
             decimal impostaDaVers = contribuente.Calcolo();
-            Console.WriteLine("==================================================");
-            Console.WriteLine("CALCOLO DELL'IMPOSTA DA VERSARE:");
+            Console.WriteLine("Calcolo Imposta:");
             Console.WriteLine($"Contribuente: {contribuente.Nome} {contribuente.Cognome},");
             Console.WriteLine($"nato il {contribuente.DataDiNascita:dd/MM/yyyy} ({contribuente.Sesso}),");
             Console.WriteLine($"residente in {contribuente.Comune},");
             Console.WriteLine($"codice fiscale: {contribuente.CodiceFiscale}");
-            Console.WriteLine($"Reddito dichiarato: {contribuente.RedditoAnnuale}");
+            Console.WriteLine($"Reddito: {contribuente.RedditoAnnuale}");
             Console.WriteLine($"IMPOSTA DA VERSARE: {impostaDaVers}");
         }
     }
